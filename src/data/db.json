@@ -1,0 +1,31 @@
+{
+    "tenants": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "roomNumber": 101,
+        "email": "john.doe@example.com",
+        "phone": "123-456-7890",
+        "rentPaid": true,
+        "rentDueDate": "2024-09-30",
+        "coTenant": {
+          "name": "Jane Doe",
+          "phone": "987-654-3210"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Alice Smith",
+        "roomNumber": 102,
+        "email": "alice.smith@example.com",
+        "phone": "123-789-4560",
+        "rentPaid": false,
+        "rentDueDate": "2024-09-25",
+        "coTenant": {
+          "name": "Bob Smith",
+          "phone": "654-321-0987"
+        }
+      }
+    ]
+  }
+  

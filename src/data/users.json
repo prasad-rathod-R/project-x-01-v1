@@ -1,0 +1,13 @@
+[
+    {
+      "username": "landlord",
+      "password": "1234",
+      "role": "landlord"
+    },
+    {
+      "username": "pgowner",
+      "password": "1234",
+      "role": "pgowner"
+    }
+  ]
+  

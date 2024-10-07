@@ -1,0 +1,122 @@
+/* Container for ManageTenants with a translucent blue background and blur effect */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.2); /* White with 20% opacity for a light, translucent background */
+  border-radius: 8px;
+  color: #333; /* Dark text for better contrast on light background */
+  position: relative; /* Required for positioning child elements */
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Subtle border to define container edges */
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.btn-primary {
+  margin: 0.5rem;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 123, 255, 0.8); /* Darker on hover */
+}
+
+.table {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.2); /* White with 20% opacity for table background */
+  color: #333;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Border around table */
+}
+
+.table th, .table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for table rows */
+}
+
+.table th {
+  background-color: rgba(0, 0, 0, 0.3); /* Slightly translucent dark background */
+  color: #f0f0f0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.3); /* Stripe effect */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.2); /* Alternating stripe effect */
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark translucent background for modal */
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5); /* Darker border for modal */
+}
+
+.modal-header, .modal-body, .modal-footer {
+  border-bottom: none;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark translucent background */
+}
+
+.modal-title {
+  color: #f0f0f0;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-footer {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark translucent background */
+  border-top: 1px solid #444; /* Dark border for modal footer */
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.2); /* Light translucent background */
+  color: #333; /* Dark text color for better visibility */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for form controls */
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+
+.form-control::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly different background color on focus */
+  color: #333; /* Ensure text color remains consistent */
+  border-color: #007bff; /* Highlight border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.buttonCss{
+display: flex;
+gap: 20px;
+}

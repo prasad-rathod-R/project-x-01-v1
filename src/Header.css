@@ -1,0 +1,95 @@
+/* Header.css */
+.header {
+  background: linear-gradient(135deg, #007bff, #00c6ff); /* Gradient background */
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-menu span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.user-menu button {
+  background: #ff6f61; /* Warm color */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.thr-buttons{
+  display: flex;
+  gap: 35px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-menu button:hover {
+  background: #e55b4f;
+}
+
+.auth-buttons a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.auth-buttons a:hover {
+  color: #f0f0f0;
+}
+
+.goback-to-dashboard{
+display: flex;
+align-items: center;
+gap: 10px;
+}

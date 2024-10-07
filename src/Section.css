@@ -1,0 +1,17 @@
+.section {
+    padding: 60px 20px; /* Add padding to account for fixed header */
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  .carousel-item{
+    height: 800px;
+  }
+
+  

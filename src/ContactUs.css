@@ -1,0 +1,53 @@
+/* ContactUs.css */
+.contact-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(194, 191, 191, 0.6); /* Black with 60% opacity */
+    border-radius: 8px;
+    color: #0c0c0c;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-header h2 {
+    color: #007bff; /* Blue color for the header */
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    background: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .form-group label {
+    color: #0c0c0c;
+  }
+  
+  .form-control {
+    background-color: #e4d7d7;
+    color: #f0f0f0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .form-control::placeholder {
+    color: #aaa;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgba(0, 123, 255, 0.8);
+  }
+  
