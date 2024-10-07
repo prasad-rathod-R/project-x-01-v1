@@ -6,23 +6,32 @@ const LandlordDashboard = () => {
   const userName = localStorage.getItem("userName") || "Guest";
   const navigate = useNavigate();
 
+
+  const manageTenantRedirect = () => {
+    navigate('/manage-tenants');
+  };
+
+  const viewRedirect = () => {
+    navigate('/view-properties');
+  };
+
   return (
     <div className="wall">
       <div className="wall-in-1">
         <div className="wall-btn">
           <button
-          // href="/manage-tenants"
+          onClick={ manageTenantRedirect}
           >
             Manage Tenants
           </button>
           <button
-          // href="/view-properties"
+           onClick={ viewRedirect}
           >
             View Properties
           </button>
         </div>
       </div>
-      <div className="wall-in-2"></div>
+      {/* <div className="wall-in-2"></div>
       <div className="container">
         <div class="row">
           <div class="col-sm-2 md-2 lg-2">
@@ -55,9 +64,9 @@ const LandlordDashboard = () => {
               <div class="card-body"><i class="bi bi-people-fill"></i></div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-    </div>
+    
   );
 };
 
