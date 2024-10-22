@@ -10,7 +10,7 @@ const initialTenants = [
 
 // AddTenant Component
 const AddTenant = ({ onAdd }) => {
-  const [newTenant, setNewTenant] = useState({ name: '', phone: '' });
+  const [newTenant, setNewTenant] = useState({ name: '', phone: '' , adharNum: ''});
 
   const handleAdd = () => {
     if (newTenant.name && newTenant.phone) {
@@ -34,6 +34,13 @@ const AddTenant = ({ onAdd }) => {
         value={newTenant.phone}
         onChange={(e) => setNewTenant({ ...newTenant, phone: e.target.value })}
       />
+       <input
+        type="text"
+        placeholder="Adhar Number"
+        value={newTenant.phone}
+        onChange={(e) => setNewTenant({ ...newTenant, adharNum: e.target.value })}
+      />
+      
       <button onClick={handleAdd}>Add Tenant</button>
     </div>
   );
@@ -63,6 +70,12 @@ const UpdateTenant = ({ tenant, onUpdate }) => {
         placeholder="Phone"
         value={updatedTenant.phone}
         onChange={(e) => setUpdatedTenant({ ...updatedTenant, phone: e.target.value })}
+      />
+       <input
+        type="text"
+        placeholder="Adhar Number"
+        value={updatedTenant.name}
+        onChange={(e) => setUpdatedTenant({ ...updatedTenant, name: e.target.value })}
       />
       <button onClick={handleUpdate}>Update Tenant</button>
     </div>
