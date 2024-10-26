@@ -62,92 +62,75 @@ const SignUp = () => {
   };
 
   return (
-    // <div className="signup-container">
-    //   <div className="signup-box">
-    //     <h2>Sign Up</h2>
-    //     <form onSubmit={handleSignUp}>
-    //       <input
-    //         type="text"
-    //         placeholder="Username"
-    //         value={username}
-    //         onChange={(e) => setUsername(e.target.value)}
-    //         required
-    //       />
-    //       <input
-    //         type="email"
-    //         placeholder="Email"
-    //         value={email}
-    //         onChange={(e) => setEmail(e.target.value)}
-    //         required
-    //       />
-    //       <input
-    //         type="text"
-    //         placeholder="Aadhar Number"
-    //         value={aadhar}
-    //         onChange={(e) => setAadhar(e.target.value)}
-    //         required
-    //       />
-    //       <input
-    //         type="tel"
-    //         placeholder="Phone Number"
-    //         value={phone}
-    //         onChange={(e) => setPhone(e.target.value)}
-    //         required
-    //       />
-    //       <input
-    //         type="text"
-    //         placeholder="Address"
-    //         value={address}
-    //         onChange={(e) => setAddress(e.target.value)}
-    //         required
-    //       />
-    //       <input
-    //         type="password"
-    //         placeholder="Password"
-    //         value={password}
-    //         onChange={(e) => setPassword(e.target.value)}
-    //         required
-    //       />
-    //       <input
-    //         type="password"
-    //         placeholder="Confirm Password"
-    //         value={confirmPassword}
-    //         onChange={(e) => setConfirmPassword(e.target.value)}
-    //         required
-    //       />
-    //       <select
-    //         value={role}
-    //         onChange={(e) => setRole(e.target.value)}
-    //         required
-    //       >
-    //         <option value="" disabled>
-    //           Select Role
-    //         </option>
-    //         <option value="landlord">Landlord</option>
-    //         <option value="pgowner">PG Owner</option>
-    //         <option value="tenant">Tenant</option> {/* Added a new role */}
-    //       </select>
-    //       <button type="submit">Sign Up</button>
-    //     </form>
-    //   </div>
-    // </div>
-
-    <Page>
-    <div className="mbsc-form-group">
-      <div className="mbsc-form-group-title">User Data</div>
-      <Input label="First name" placeholder="First Name" />
-      <Input label="Last name" placeholder="Last Name" />
-      <Input label="User name" placeholder="User Name" />
-      <Input label="Company" placeholder="Company Name" />
-      <Input label="Email" placeholder="Email Address" />
+    <div className="signup-container">
+      <div className="signup-box">
+        <h2>Sign Up</h2>
+        <form onSubmit={handleSignUp}>
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Aadhar Number"
+            value={aadhar}
+            onChange={(e) => setAadhar(e.target.value)}
+            required
+          />
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Address"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+          <select
+            value={role}
+            onChange={(e) => setRole(e.target.value)}
+            required
+          >
+            <option value="" disabled>
+              Select Role
+            </option>
+            <option value="landlord">Landlord</option>
+            <option value="pgowner">PG Owner</option>
+            <option value="tenant">Tenant</option> {/* Added a new role */}
+          </select>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
     </div>
-    <div className="mbsc-form-group">
-      <div className="mbsc-form-group-title">Phone Number</div>
-      <Input label="Home" placeholder="Home" />
-      <Input label="Business" placeholder="Business" />
-      <Input label="Fax" placeholder="Fax" />
-    </div>
-  </Page>
   );
 };
 

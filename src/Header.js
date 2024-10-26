@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -53,10 +54,7 @@ const Header = ({ user, onLogout }) => {
               </>
             ) : (
               <div className="auth-buttons">
-                <Button>
-                  <Link to="/login">Login</Link>
-                </Button>
-
+           
                 <Form inline>
                   <Row>
                     <Col xs="auto">
@@ -67,7 +65,7 @@ const Header = ({ user, onLogout }) => {
                       />
                     </Col>
                     <Col xs="auto">
-                      <Button type="submit">Submit</Button>
+                      <Button type="submit"> <Link to="/login">Login</Link></Button>
                     </Col>
                   </Row>
                 </Form>
