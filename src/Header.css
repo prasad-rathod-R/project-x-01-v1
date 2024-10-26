@@ -76,7 +76,10 @@ nav a:hover {
 }
 
 .auth-buttons a {
-  margin-left: 15px;
+  margin-left: 740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #fff;
   font-size: 16px;

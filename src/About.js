@@ -1,13 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 
-function About() {
-  return (
-    <section id="about" className="section">
-      <h1>About</h1>
-      <p>Information about us.</p>
-    </section>
-  );
+const About = () => {
+       return (
+              <div className="sec__one">
+                     <h1> About </h1>
+              </div>
+       )
 }
 
-export default About;
+export default About

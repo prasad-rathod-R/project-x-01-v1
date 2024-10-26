@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import Home from "./Home";
-import Services from "./Services";
 import ContactUs from "./ContactUs";
 import LandlordDashboard from "./LandlordDashboard";
 import Dashboard from "./Dashboard";
@@ -15,8 +14,6 @@ import ViewTenants from "./ViewTenants";
 import UpdateTenant from "./UpdateTenant";
 import DeleteTenant from "./DeleteTenant";
 import RentDashboard from "./RentDashboard";
-import LandingPage  from "./LandingPage";
-
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -44,7 +41,27 @@ const App = () => {
   }, [localStorage]);
 
   return (
- <div><LandingPage /></div>
+    <Router>
+      <Header user={user} onLogout={handleLogout} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/login" element={<Login onLogin={handleLogin} />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/Dashboard" element={<Dashboard />}></Route>
+        <Route
+          path="/landlord-dashboard"
+          element={<LandlordDashboard />}
+        ></Route>
+        <Route path="/manage-tenants" element={<ManageTenants />}></Route>
+        <Route path="/view-properties" element={<ViewProperties />}></Route>
+        <Route path="/view-tenants" element={<ViewTenants />} />
+        <Route path="/update-tenant" element={<UpdateTenant />} />
+        <Route path="/delete-tenant" element={<DeleteTenant />} />
+        <Route path="/rent-dashboard" element={<RentDashboard />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 

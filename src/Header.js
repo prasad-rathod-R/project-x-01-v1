@@ -1,5 +1,11 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 import "./Header.css";
 
 const Header = ({ user, onLogout }) => {
@@ -34,24 +40,40 @@ const Header = ({ user, onLogout }) => {
           <div className="thr-buttons">
             <Link to="/">Home</Link>
             <Link to="/services">Services</Link>
-            <Link to="/contact">Contact Us</Link>
-          </div>
+            <Link to="/contact">About Us</Link>
 
-          {localStorage.getItem("loggedInUser") ? (
-           <>
-           <div className="goback-to-dashboard">
-              <Link to="/landlord-dashboard">GO Back to Dashboard</Link>
-              <div className="user-menu">
-                <button onClick={logout}>Logout</button>
+            {localStorage.getItem("loggedInUser") ? (
+              <>
+                <div className="goback-to-dashboard">
+                  <Link to="/landlord-dashboard">GO Back to Dashboard</Link>
+                  <div className="user-menu">
+                    <button onClick={logout}>Logout</button>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <div className="auth-buttons">
+                <Button>
+                  <Link to="/login">Login</Link>
+                </Button>
+
+                <Form inline>
+                  <Row>
+                    <Col xs="auto">
+                      <Form.Control
+                        type="text"
+                        placeholder="Search"
+                        className=" mr-sm-2"
+                      />
+                    </Col>
+                    <Col xs="auto">
+                      <Button type="submit">Submit</Button>
+                    </Col>
+                  </Row>
+                </Form>
               </div>
-              </div>
-            </>
-          ) : (
-            <div className="auth-buttons">
-              <Link to="/login">Login</Link>
-              <Link to="/signup">Sign Up</Link>
-            </div>
-          )}
+            )}
+          </div>
         </nav>
       </div>
     </header>
